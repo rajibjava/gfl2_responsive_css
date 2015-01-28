@@ -17,7 +17,7 @@ body {
 /* HEADER BLOCK */
 
 .header-background {
-    background-image: url(img/header-bg.jpg);
+    background-image: url(../img/header-bg.jpg);
     height: 400px;
     position: relative;
 }
@@ -109,7 +109,7 @@ span.green {
 }
 
 .hr-background {
-    background: url(img/hr-bg.png);
+    background: url(../img/hr-bg.png);
     width: 229px;
     height: 14px;
     margin: auto;
@@ -161,7 +161,7 @@ span.green {
 .slider ul li {
     float: left;
     list-style: none;
-    background: url(img/slide_point_bg.png) no-repeat;
+    background: url(../img/slide_point_bg.png) no-repeat;
     width: 8px;
     height: 8px;
     margin-left: 5px;
@@ -169,7 +169,7 @@ span.green {
 }
 
 .slider ul li.active {
-    background: url(img/slide_point_active_bg.png) no-repeat;
+    background: url(../img/slide_point_active_bg.png) no-repeat;
 }
 
 .slider ul li:hover {
@@ -253,7 +253,7 @@ span.green {
 
 .footer button {
     float: left;
-    background: #062134 url(img/arrow-input-bg.png) 10px 10px no-repeat;
+    background: #062134 url(../img/arrow-input-bg.png) 10px 10px no-repeat;
     height: 40px;
     width: 40px;
     height: 40px;

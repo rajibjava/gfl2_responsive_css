@@ -409,7 +409,7 @@ span.green {
         padding: 10px 20px 40px 20px;
     }
 
-    .footer div[class$="-3"] {
+    .footer div[class$="n-3"] {
         display: none;
     }
 
@@ -420,6 +420,25 @@ span.green {
     .photos ul a:nth-child(even) {
         display: block;
         clear: left;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .footer div[class$="n-1"] {
+        display: none;
+    }
+
+    nav ul {
+        /*background: white;*/
+        list-style: none;
+        padding: 5px;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 5px;
     }
 
 }

@@ -1,0 +1,425 @@
+/* GENERAL STUFF */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* HEADER BLOCK */
+
+.header-background {
+    background-image: url(img/header-bg.jpg);
+    height: 400px;
+    position: relative;
+}
+
+.header-background > div:first-child {
+    width: 100%;
+    background: #232323;
+    position: absolute;
+    top: 50px;
+}
+
+.header {
+    background: #232323;
+    color: #B2B2B2;
+    width: 80%;
+    margin: auto;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:active {
+    color: #19A3A3;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 25px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 25px;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #19A3A3;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    border-bottom: 2px solid tomato;
+}
+
+.header-logo {
+    font-family: 'Indie Flower', cursive;
+    font-size: 36px;
+    padding: 8px;
+    float: left;
+}
+
+.header-notes {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    color: white;
+}
+
+.header-notes div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+}
+
+span.green {
+    color: #19A3A3;
+}
+
+/* PAGE MAIN CONTENT */
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    color: #19A3A3;
+    padding: 25px;
+}
+
+.content p {
+    padding: 25px 15%;
+}
+
+.hr-background {
+    background: url(img/hr-bg.png);
+    width: 229px;
+    height: 14px;
+    margin: auto;
+}
+
+.photos {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: inline-block
+}
+
+.photos ul li {
+    float: left;
+    list-style: none;
+    padding: 15px;
+    width: 160px;
+}
+
+.photos ul li > img {
+    width: 100%;
+}
+
+.photos ul li:hover h3 {
+    color: #19A3A3;
+}
+
+.photos a {
+    text-decoration: none;
+    color: black;
+}
+
+.photos h3 {
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.photos p {
+    font-size: 13px;
+    padding: 0;
+}
+
+.slider {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.slider ul li {
+    float: left;
+    list-style: none;
+    background: url(img/slide_point_bg.png) no-repeat;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    border-radius: 100%;
+}
+
+.slider ul li.active {
+    background: url(img/slide_point_active_bg.png) no-repeat;
+}
+
+.slider ul li:hover {
+    box-shadow: 0 0 0.5em black;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #062134;
+    color: white;
+    width: 70%;
+    display: table;
+    padding-left: 5%;
+    padding-right: 25%;
+}
+
+.footer > div {
+    display: table-row;
+}
+
+.footer > div > div {
+    display: table-cell;
+}
+
+.row-1 div[class^="column"] {
+    padding: 100px 10px 30px 20px;
+    font-weight: bold;
+}
+
+.row-2 div[class^="column"] {
+    padding: 10px 20px 100px 20px;
+}
+
+.row-2 .column-2 p {
+    /*padding-top: 50px;*/
+}
+
+.footer div[class^="column"] {
+    width: 30%;
+    /* border: 1px solid green; */
+}
+
+.footer p {
+    line-height: 200%;
+}
+
+.footer input {
+    display: block;
+    float: left;
+    background: #062134;
+    /*border: 2px solid white;*/
+    border-top: 2px solid white;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /*padding: 10px;*/
+    width: 75%;
+    color: white;
+    height: 36px;
+    text-indent: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #1F3748;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #1F3748;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #1F3748;
+}
+
+:-ms-input-placeholder {
+   color: #1F3748;
+}
+
+.footer button {
+    float: left;
+    background: #062134 url(img/arrow-input-bg.png) 10px 10px no-repeat;
+    height: 40px;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 0;
+    border-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.row-2 p {
+    clear: left;
+}
+
+.footer input:focus {
+    outline: 0;
+    background: #4D7EC9;
+}
+
+.footer input:hover {
+    box-shadow: 0 0 0.5em white;
+}
+
+.footer button:hover {
+    background-color: blue;
+}
+
+.footer button:focus {
+    outline: 0;
+}
+
+.list-of-resources {
+    display: table;
+}
+
+.list-of-resources > div {
+    display: table-row;
+}
+
+.list-of-resources > div  > div {
+    display: table-cell;
+    padding: 5px;
+}
+
+.list-of-resources > div  > div:last-child {
+    padding: 0 0 0 30px;
+}
+
+.list-of-resources a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-of-resources a:hover {
+    color: tomato;
+}
+
+
+@media screen and (max-width:900px) {
+
+    /* HEADER */
+
+    .header-background {
+        height: 300px;
+    }
+
+    .header-notes {
+        top: 150px;
+    }
+
+    .header-notes > div {
+        width: 80%;
+    }
+
+    .header-background > div:first-child {
+        top: 0;
+    }
+
+    .header {
+        background: #232323;
+        color: #B2B2B2;
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-logo {
+        font-family: 'Indie Flower', cursive;
+        font-size: 36px;
+        padding-left: 30px;
+        float: left;
+    }
+
+    nav {
+        float: initial;
+        clear: both;
+    }
+
+    nav ul {
+        /*background: white;*/
+        list-style: none;
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 15px;
+    }
+
+    /* CONTENT */
+
+    .photos ul a:nth-child(3n+3) {
+        display: block;
+        clear: left;
+    }
+
+    .photos ul li {
+        width: 250px;
+    }
+
+    .photos h3 {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    .photos p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer > div {
+        display: table-row;
+    }
+
+    .footer > div > div: {
+        display: table-cell;
+    }
+
+    .row-1 div[class^="column"] {
+        padding: 40px 10px 30px 20px;
+    }
+
+    .row-2 div[class^="column"] {
+        padding: 10px 20px 40px 20px;
+    }
+
+    .footer div[class$="-3"] {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .photos ul a:nth-child(even) {
+        display: block;
+        clear: left;
+    }
+
+}

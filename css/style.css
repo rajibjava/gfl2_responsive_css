@@ -10,11 +10,17 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
-.clear {
+/*.clear {
     clear: both;
+}*/
+
+.clear:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    content: "";
+    height: 0;
 }
-
-
 
 /* HEADER BLOCK */
 
@@ -155,9 +161,10 @@ span.green {
 }
 
 .slider {
-    display: inline-block;
+    display: block;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    width: 60px;
 }
 
 .slider ul {

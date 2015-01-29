@@ -14,19 +14,18 @@ body {
     clear: both;
 }
 
+
+
 /* HEADER BLOCK */
 
 .header-background {
     background-image: url(../img/header-bg.jpg);
-    height: 400px;
-    position: relative;
+    padding-top: 50px;
 }
 
 .header-background > div:first-child {
     width: 100%;
     background: #232323;
-    position: absolute;
-    top: 50px;
 }
 
 .header {
@@ -76,8 +75,11 @@ nav ul li.active {
 }
 
 .header-notes {
+/*
     position: absolute;
     top: 200px;
+*/
+    padding: 100px 0;
     width: 100%;
     color: white;
 }
@@ -156,6 +158,10 @@ span.green {
     display: inline-block;
     margin: auto;
     margin-bottom: 10px;
+}
+
+.slider ul {
+    height: 8px;
 }
 
 .slider ul li {
@@ -314,21 +320,32 @@ span.green {
     color: tomato;
 }
 
+@media screen and (max-width:1100px) {
 
-@media screen and (max-width:900px) {
+    .footer {
+        padding-left: 2%;
+        padding-right: 10%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
 
     /* HEADER */
 
     .header-background {
-        height: 300px;
+/*      height: 300px;*/
+        padding-top: 0;
     }
 
     .header-notes {
-        top: 150px;
+        padding: 50px 0;
     }
 
     .header-notes > div {
-        width: 80%;
+        width: 70%;
+        font-size: 35px;
     }
 
     .header-background > div:first-child {
@@ -426,8 +443,16 @@ span.green {
 
 @media screen and (max-width:480px) {
 
-    .footer div[class$="n-1"] {
-        display: none;
+    .header-logo {
+        font-family: 'Indie Flower', cursive;
+        font-size: 26px;
+        padding: 8px;
+        float: left;
+    }
+
+    .header-notes > div {
+        width: 80%;
+        font-size: 26px;
     }
 
     nav ul {
@@ -439,6 +464,10 @@ span.green {
     nav ul li {
         display: inline;
         padding: 5px;
+    }
+
+    .footer div[class$="n-1"] {
+        display: none;
     }
 
 }

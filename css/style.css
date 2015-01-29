@@ -81,10 +81,6 @@ nav ul li.active {
 }
 
 .header-notes {
-/*
-    position: absolute;
-    top: 200px;
-*/
     padding: 100px 0;
     width: 100%;
     color: white;
@@ -127,17 +123,18 @@ span.green {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 40px;
-    display: inline-block
+    display: inline-block;
+    width: 70%;
 }
 
 .photos ul li {
     float: left;
     list-style: none;
-    padding: 15px;
-    width: 160px;
+    padding: 1%;
+    width: 23%;
 }
 
-.photos ul li > img {
+.photos ul li img {
     width: 100%;
 }
 
@@ -194,10 +191,13 @@ span.green {
 .footer {
     background: #062134;
     color: white;
-    width: 70%;
     display: table;
-    padding-left: 5%;
-    padding-right: 25%;
+    font-size: 14px;
+}
+
+.footer .column-title {
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .footer > div {
@@ -206,24 +206,24 @@ span.green {
 
 .footer > div > div {
     display: table-cell;
+    width: 23%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.row-1 div[class^="column"] {
-    padding: 100px 10px 30px 20px;
-    font-weight: bold;
+.footer > div > div:first-child {
+    padding-left: 5%;
+    padding-right: 1%;
 }
 
-.row-2 div[class^="column"] {
-    padding: 10px 20px 100px 20px;
+.footer > div > div:nth-child(2) {
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.row-2 .column-2 p {
-    /*padding-top: 50px;*/
-}
-
-.footer div[class^="column"] {
-    width: 30%;
-    /* border: 1px solid green; */
+.footer > div > div:nth-child(3) {
+    padding-left: 1%;
+    padding-right: 20%;
 }
 
 .footer p {
@@ -280,9 +280,9 @@ span.green {
     margin-bottom: 30px;
 }
 
-.row-2 p {
+/*.row-2 p {
     clear: left;
-}
+}*/
 
 .footer input:focus {
     outline: 0;
@@ -311,7 +311,7 @@ span.green {
 
 .list-of-resources > div  > div {
     display: table-cell;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .list-of-resources > div  > div:last-child {
@@ -329,11 +329,11 @@ span.green {
 
 @media screen and (max-width:1100px) {
 
-    .footer {
+/*    .footer {
         padding-left: 2%;
         padding-right: 10%;
         width: 100%;
-    }
+    }*/
 
 }
 
@@ -391,13 +391,65 @@ span.green {
 
     /* CONTENT */
 
+    .photos {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    .footer > div > div {
+        display: table-cell;
+        width: 28%;
+        padding-top: 50px;
+    }
+
+    .footer > div > div:first-child {
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+
+    .footer > div > div:nth-child(2) {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .footer > div > div:nth-child(3) {
+        padding-left: 1%;
+        padding-right: 5%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .footer > div > div {
+        display: block;
+        float: left;
+        width: 42%;
+    }
+
+    .footer > div > div:last-child {
+        clear: both;
+        padding-left: 5%;
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .photos ul li {
+        float: left;
+        list-style: none;
+        padding: 5%;
+        width: 40%;
+    }
+
     .photos ul a:nth-child(3n+3) {
         display: block;
         clear: left;
-    }
-
-    .photos ul li {
-        width: 250px;
     }
 
     .photos h3 {
@@ -410,40 +462,14 @@ span.green {
         padding: 0;
     }
 
-    /* FOOTER */
-
-    .footer {
-        padding: 0;
-        width: 100%;
+    .footer > div > div {
+        width: 90%;
     }
 
-    .footer > div {
-        display: table-row;
-    }
-
-    .footer > div > div: {
-        display: table-cell;
-    }
-
-    .row-1 div[class^="column"] {
-        padding: 40px 10px 30px 20px;
-    }
-
-    .row-2 div[class^="column"] {
-        padding: 10px 20px 40px 20px;
-    }
-
-    .footer div[class$="n-3"] {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width:600px) {
-
-    .photos ul a:nth-child(even) {
-        display: block;
-        clear: left;
+    .footer > div > div:nth-child(2) {
+        clear: both;
+        padding-left: 5%;
+        padding-top: 10px;
     }
 
 }
@@ -463,7 +489,6 @@ span.green {
     }
 
     nav ul {
-        /*background: white;*/
         list-style: none;
         padding: 5px;
     }
@@ -471,10 +496,6 @@ span.green {
     nav ul li {
         display: inline;
         padding: 5px;
-    }
-
-    .footer div[class$="n-1"] {
-        display: none;
     }
 
 }

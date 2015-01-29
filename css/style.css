@@ -327,16 +327,6 @@ span.green {
     color: tomato;
 }
 
-@media screen and (max-width:1100px) {
-
-/*    .footer {
-        padding-left: 2%;
-        padding-right: 10%;
-        width: 100%;
-    }*/
-
-}
-
 @media screen and (max-width:1000px) {
 
     /* HEADER */
@@ -441,14 +431,11 @@ span.green {
 @media screen and (max-width:600px) {
 
     .photos ul li {
-        float: left;
-        list-style: none;
         padding: 5%;
         width: 40%;
     }
 
-    .photos ul a:nth-child(3n+3) {
-        display: block;
+    .photos ul li:nth-child(3n+3) {
         clear: left;
     }
 
@@ -477,10 +464,8 @@ span.green {
 @media screen and (max-width:480px) {
 
     .header-logo {
-        font-family: 'Indie Flower', cursive;
         font-size: 26px;
         padding: 8px;
-        float: left;
     }
 
     .header-notes > div {
